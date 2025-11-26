@@ -253,13 +253,13 @@ AirSim360 is a large-scale omnidirectional simulation platform for drone scenari
                 <div class="content">
                     <p>
                         We present and benchmark the sampled dataset in multiple tasks, 
-                        indicating the benefits of our proposed simulator for real-world scenarios. [cite_start]Our simulated data consistently improves performance and robustness when evaluated on public real-world validation sets[cite: 232].
+                        indicating the benefits of our proposed simulator for real-world scenarios. Our simulated data consistently improves performance and robustness when evaluated on public real-world validation sets[cite: 232].
                     </p>
 
                     <h4 class="title is-4">1. Monocular Pedestrian Distance Estimation (MPDE)</h4>
                     <p>
-                        [cite_start]Training with the Omni360-Human dataset significantly improves the cross-domain generalization of Monocular Pedestrian Distance Estimation (MPDE) models[cite: 708].
-                        [cite_start]Specifically, the average angular error decreases from $21.21^{\circ}$ to $17.02^{\circ}$, and the mean distance error decreases from 0.484 m to 0.458 m on public test sets[cite: 709].
+                        Training with the Omni360-Human dataset significantly improves the cross-domain generalization of Monocular Pedestrian Distance Estimation (MPDE) models[cite: 708].
+                        Specifically, the average angular error decreases from $21.21^{\circ}$ to $17.02^{\circ}$, and the mean distance error decreases from 0.484 m to 0.458 m on public test sets[cite: 709].
                     </p>
                     <table class="table is-striped is-hoverable is-fullwidth">
                         <thead>
@@ -272,35 +272,35 @@ AirSim360 is a large-scale omnidirectional simulation platform for drone scenari
                         </thead>
                         <tbody>
                             <tr>
-                                [cite_start]<td>nuScenes [cite: 654]</td>
-                                [cite_start]<td>KITTI [cite: 654]</td>
-                                [cite_start]<td>0.822 [cite: 654]</td>
-                                [cite_start]<td>31.50 [cite: 654]</td>
+                                <td>nuScenes </td>
+                                <td>KITTI </td>
+                                <td>0.822 </td>
+                                <td>31.50 </td>
                             </tr>
                             <tr class="has-background-warning-light">
-                                [cite_start]<td>nuScenes + **Omni360** [cite: 654]</td>
-                                [cite_start]<td>KITTI [cite: 654]</td>
-                                [cite_start]<td><strong>0.809</strong> [cite: 654]</td>
-                                [cite_start]<td><strong>31.20</strong> [cite: 654]</td>
+                                <td>nuScenes + **Omni360** </td>
+                                <td>KITTI </td>
+                                <td><strong>0.809</strong> </td>
+                                <td><strong>31.20</strong> </td>
                             </tr>
                             <tr>
-                                [cite_start]<td>nuScenes [cite: 654]</td>
-                                [cite_start]<td>FreeMan [cite: 654]</td>
-                                [cite_start]<td>0.260 [cite: 654]</td>
-                                [cite_start]<td>17.00 [cite: 654]</td>
+                                <td>nuScenes </td>
+                                <td>FreeMan </td>
+                                <td>0.260 </td>
+                                <td>17.00 </td>
                             </tr>
                             <tr class="has-background-warning-light">
-                                [cite_start]<td>nuScenes + **Omni360** [cite: 654]</td>
-                                [cite_start]<td>FreeMan [cite: 654]</td>
-                                [cite_start]<td><strong>0.228</strong> [cite: 654]</td>
-                                [cite_start]<td><strong>11.60</strong> [cite: 654]</td>
+                                <td>nuScenes + **Omni360** </td>
+                                <td>FreeMan </td>
+                                <td><strong>0.228</strong> </td>
+                                <td><strong>11.60</strong> </td>
                             </tr>
                         </tbody>
                     </table>
 
                     <h4 class="title is-4">2. Panoramic Depth Estimation (Out-of-Domain)</h4>
                     <p>
-                        We conduct out-of-domain experiments to evaluate the generalization ability of the Omni360 dataset. [cite_start]Models trained on Omni360 show improved generalization to unseen environments (SphereCraft)[cite: 794].
+                        We conduct out-of-domain experiments to evaluate the generalization ability of the Omni360 dataset. Models trained on Omni360 show improved generalization to unseen environments (SphereCraft)[cite: 794].
                     </p>
                     <table class="table is-striped is-hoverable is-fullwidth">
                         <thead>
@@ -314,25 +314,25 @@ AirSim360 is a large-scale omnidirectional simulation platform for drone scenari
                         </thead>
                         <tbody>
                             <tr>
-                                [cite_start]<td>Out-of-Domain [cite: 793]</td>
-                                [cite_start]<td>Deep360 [cite: 783]</td>
-                                [cite_start]<td>SphereCraft [cite: 783]</td>
-                                [cite_start]<td>8.2570 [cite: 783]</td>
-                                [cite_start]<td>0.0566 [cite: 783]</td>
+                                <td>Out-of-Domain </td>
+                                <td>Deep360 </td>
+                                <td>SphereCraft </td>
+                                <td>8.2570 </td>
+                                <td>0.0566 </td>
                             </tr>
                             <tr class="has-background-warning-light">
-                                [cite_start]<td>Out-of-Domain [cite: 793]</td>
-                                [cite_start]<td>**Omni360 (Ours)** [cite: 783]</td>
-                                [cite_start]<td>SphereCraft [cite: 783]</td>
-                                [cite_start]<td><strong>5.4372</strong> [cite: 783]</td>
-                                [cite_start]<td><strong>0.0435</strong> [cite: 783]</td>
+                                <td>Out-of-Domain </td>
+                                <td>**Omni360 (Ours)** </td>
+                                <td>SphereCraft </td>
+                                <td><strong>5.4372</strong> </td>
+                                <td><strong>0.0435</strong> </td>
                             </tr>
                         </tbody>
                     </table>
 
                     <h4 class="title is-4">3. Panoramic Segmentation</h4>
                     <p>
-                        [cite_start]The introduction of our large-scale Omni360-Scene segmentation data provides substantial performance gains on the WildPASS validation set for pixel-level scene parsing[cite: 799].
+                        The introduction of our large-scale Omni360-Scene segmentation data provides substantial performance gains on the WildPASS validation set for pixel-level scene parsing[cite: 799].
                     </p>
                     <table class="table is-striped is-hoverable is-fullwidth">
                         <thead>
@@ -345,24 +345,24 @@ AirSim360 is a large-scale omnidirectional simulation platform for drone scenari
                         </thead>
                         <tbody>
                             <tr>
-                                [cite_start]<td rowspan="2">Semantic Segmentation [cite: 787]</td>
-                                [cite_start]<td>WildPASS Baseline [cite: 787]</td>
+                                <td rowspan="2">Semantic Segmentation </td>
+                                <td>WildPASS Baseline </td>
                                 <td rowspan="2">mIoU $\uparrow$</td>
-                                [cite_start]<td>58.0 [cite: 787]</td>
+                                <td>58.0 </td>
                             </tr>
                             <tr class="has-background-warning-light">
-                                [cite_start]<td>WildPASS + **Omni360-Scene** [cite: 787]</td>
-                                [cite_start]<td><strong>67.4</strong> [cite: 787]</td>
+                                <td>WildPASS + **Omni360-Scene** </td>
+                                <td><strong>67.4</strong> </td>
                             </tr>
                             <tr>
-                                [cite_start]<td rowspan="2">Entity Segmentation [cite: 787]</td>
-                                [cite_start]<td>WildPASS Baseline [cite: 787]</td>
+                                <td rowspan="2">Entity Segmentation </td>
+                                <td>WildPASS Baseline </td>
                                 <td rowspan="2">mAP $\uparrow$</td>
-                                [cite_start]<td>24.6 [cite: 787]</td>
+                                <td>24.6 </td>
                             </tr>
                             <tr class="has-background-warning-light">
-                                [cite_start]<td>WildPASS + **Omni360-Scene** [cite: 787]</td>
-                                [cite_start]<td><strong>38.9</strong> [cite: 787]</td>
+                                <td>WildPASS + **Omni360-Scene** </td>
+                                <td><strong>38.9</strong> </td>
                             </tr>
                         </tbody>
                     </table>
