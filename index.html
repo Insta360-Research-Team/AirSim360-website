@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="One Flight Over the Gap: A Survey from Perspective to Panoramic Vision">
-  <meta name="keywords" content="Panoramic Vision, Domain Gap, Projection Distortion.">
+    content="AirSim360: A Panoramic Simulation Platform within Drone View">
+  <meta name="keywords" content="Omnidirection, Panorama, Simulator.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    One Flight Over the Gap: A Survey from Perspective to Panoramic Vision
+    AirSim360: A Panoramic Simulation Platform within Drone View
   </title>
   
-  <link rel="icon" href="./insta_logo.png" type="image/png">
+  <!-- <link rel="icon" href="./insta_logo.png" type="image/png">
   <link rel="shortcut icon" href="./insta_logo.png" type="image/png">
   <link rel="icon" href="./static/images/insta_logo_1-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="./static/images/insta_logo_1-48.png" sizes="48x48" type="image/png">
-  <link rel="icon" href="./static/images/insta_logo_1-64.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="./static/images/insta_logo_1-64.png" sizes="64x64" type="image/png"> -->
 
 
     <!-- Google tag (gtag.js) -->
@@ -51,7 +51,7 @@
   <div class="hero-video is-hidden-tablet is-inline-block-mobile"
     style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
     <video playsinline autoplay muted loop>
-      <source src=" ./static/videos/bg1.mp4" type="video/mp4">
+      <source src=" ./static/videos/airsim360_video_480p.mp4" type="video/mp4">
     </video>
   </div>
   <div class="overlay"></div>
@@ -61,7 +61,7 @@
       <div class="container is-size-5">
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item pl-4 pr-4" href="Panorama_survey.pdf">
+            <a class="navbar-item pl-4 pr-4" href="AirSim360.pdf">
               <span class="icon" style="margin-right:5px;">
                 <img src="./static/images/pdf.svg" alt="PDF" />
               </span>
@@ -73,7 +73,7 @@
               </span>
               <span>arXiv</span>
             </a>
-            <a href="https://www.youtube.com/embed/8nc4Qod6iZw" class="navbar-item  pl-4 pr-4">
+            <a href="https://www.youtube.com/embed/nQCXObgeP6Y" class="navbar-item  pl-4 pr-4">
               <span class="icon" style="margin-right:5px;">
                 <img src="./static/images/youtube.svg" alt="Youtube" />
               </span>
@@ -96,11 +96,11 @@
       <div style="display: inline-flex; align-items: center; justify-content: center;">
     <img src="plane.png" alt="Plane" style="margin-top: 10px; width: 180px; height: auto;">
     <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 6rem; margin: 0;">
-      One Flight Over the Gap
+      AirSim360
     </h1>
   </div>
       <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 4rem;">
-        A Survey from Perspective to Panoramic Vision
+        A Panoramic Simulation Platform within Drone View
       </h1>
       <p>
         <br>
@@ -198,12 +198,13 @@
   <div class="container is-max-desktop">
     <h2 class="title is-1 has-text-centered is-size-4-mobile">Technical Summary Video</h2>
     <h2 class="subtitle ">
-        Panoramic vision provides holistic 360 perception, supporting applications in <b>VR, autonomous driving, and embodied robotics</b>. 
-    Unlike conventional perspective images, panoramic imagery exhibits unique geometric distortions, non-uniform spatial sampling, 
-    and boundary continuity, creating a substantial <b>domain gap</b> that hinders direct transfer of existing vision models. 
+        AirSim360, a simulation platform for omnidirectional data from aerial viewpoints, enabling wide-ranging scene sampling with drones. 
+      Specifically, AirSim360 focuses on three key aspects: a render-aligned data and labeling paradigm for pixel-level geometric, semantic, 
+      and instance-level understanding; an interactive pedestrian-aware system for modeling human behavior; 
+      and an automated trajectory generation paradigm to support navigation tasks.
         </h2>
     <iframe width="100%" style="aspect-ratio: 16 / 9;" src="
-      https://www.youtube.com/embed/8nc4Qod6iZw" title="Panoramic Survey Video"
+      https://www.youtube.com/embed/nQCXObgeP6Y" title="AirSim360 Video"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -215,10 +216,12 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile">Foundational Knowledge</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile">AirSim360 Architecture</h2>
         <div class="content">
-Panorama stitching involves classical ISP preprocessing (demosaicing, denoising, correction), keypoint-based data association, geometric alignment (RANSAC + homography), and image blending. For 360° images, spherical projection serves as the base representation, from which planar forms are derived: (b) equirectangular (longitude–latitude), (c) cubemap (six 90° faces), (d) icosahedron (near-uniform sampling), (e) tangent (local planar mapping), and (f) panini (vertical preservation with horizontal compression).
-          <img src="projection.png" alt="Projection figure" style="width:100%; border-radius:8px; margin-top:1rem;">
+AirSim360 is a large-scale omnidirectional simulation platform for drone scenarios.
+          we emphasize consistency and compatibility among three key components in low-altitude ground environments, 
+          including static surroundings, the UAV, and human actors, which aligns closely with the main characteristics of the human-centric real world.
+          <img src="architechture.png" alt="Projection figure" style="width:100%; border-radius:8px; margin-top:1rem;">
         </div>
       </div>
     </div>
@@ -230,10 +233,11 @@ Panorama stitching involves classical ISP preprocessing (demosaicing, denoising,
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile">Three Gaps</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile">Datasets Collection</h2>
         <div class="content">
-            From spherical image to Panoramic ERP and perspective image, ERP preserves a complete field of view compared to perspective images, but introduces three major domain gaps: (1) geometric distortion, (2) non-uniform spatial sampling, and (3) boundary continuity..
-          <img src="teaser.png" alt="Gaps figure" style="width:100%; border-radius:8px; margin-top:1rem;">
+            To serve diverse research objectives, Omni360-X is organized into three subsets, including Scene, Pedestrian, and Trajectory, where each emphasizes a specific aspect of 360-degree understanding.
+          <img src="6cube_to_erp.png" alt="Gaps figure" style="width:100%; border-radius:8px; margin-top:1rem;">
+          <img src="annotation_v2.png" alt="Gaps figure" style="width:100%; border-radius:8px; margin-top:1rem;">
         </div>
       </div>
     </div>
@@ -241,51 +245,133 @@ Panorama stitching involves classical ISP preprocessing (demosaicing, denoising,
 </section>
 
   
-<section class="section is-small" id="umi">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile">Methodological Analysis</h2>
-        <div class="content">
-            <strong>The best part?</strong>
-        <b>Cross-method</b> and <b>Cross-task</b> analysis across four major directions: 
-    visual quality enhancement, visual understanding, multimodal fusion, and visual generation, covering 
-    <b>20+ tasks and nearly 300 papers</b>.
-          <img src="method_1.png" alt="Method_1 figure" style="width:100%; border-radius:8px; margin-top:1rem;">
-          <img src="method_2.jpg" alt="Method_2 figure" style="width:100%; border-radius:8px; margin-top:1rem;">
+<section class="section is-small" id="experiments">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-1 has-text-centered is-size-4-mobile">Experiments</h2>
+                <div class="content">
+                    <p>
+                        We present and benchmark the sampled dataset in multiple tasks, 
+                        indicating the benefits of our proposed simulator for real-world scenarios. [cite_start]Our simulated data consistently improves performance and robustness when evaluated on public real-world validation sets[cite: 232].
+                    </p>
+
+                    <h4 class="title is-4">1. Monocular Pedestrian Distance Estimation (MPDE)</h4>
+                    <p>
+                        [cite_start]Training with the Omni360-Human dataset significantly improves the cross-domain generalization of Monocular Pedestrian Distance Estimation (MPDE) models[cite: 708].
+                        [cite_start]Specifically, the average angular error decreases from $21.21^{\circ}$ to $17.02^{\circ}$, and the mean distance error decreases from 0.484 m to 0.458 m on public test sets[cite: 709].
+                    </p>
+                    <table class="table is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Training Set</th>
+                                <th>Test Set</th>
+                                <th>Dist. Err $\downarrow$ (m)</th>
+                                <th>Ang. Err $\downarrow$ ($^{\circ}$)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                [cite_start]<td>nuScenes [cite: 654]</td>
+                                [cite_start]<td>KITTI [cite: 654]</td>
+                                [cite_start]<td>0.822 [cite: 654]</td>
+                                [cite_start]<td>31.50 [cite: 654]</td>
+                            </tr>
+                            <tr class="has-background-warning-light">
+                                [cite_start]<td>nuScenes + **Omni360** [cite: 654]</td>
+                                [cite_start]<td>KITTI [cite: 654]</td>
+                                [cite_start]<td><strong>0.809</strong> [cite: 654]</td>
+                                [cite_start]<td><strong>31.20</strong> [cite: 654]</td>
+                            </tr>
+                            <tr>
+                                [cite_start]<td>nuScenes [cite: 654]</td>
+                                [cite_start]<td>FreeMan [cite: 654]</td>
+                                [cite_start]<td>0.260 [cite: 654]</td>
+                                [cite_start]<td>17.00 [cite: 654]</td>
+                            </tr>
+                            <tr class="has-background-warning-light">
+                                [cite_start]<td>nuScenes + **Omni360** [cite: 654]</td>
+                                [cite_start]<td>FreeMan [cite: 654]</td>
+                                [cite_start]<td><strong>0.228</strong> [cite: 654]</td>
+                                [cite_start]<td><strong>11.60</strong> [cite: 654]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 class="title is-4">2. Panoramic Depth Estimation (Out-of-Domain)</h4>
+                    <p>
+                        We conduct out-of-domain experiments to evaluate the generalization ability of the Omni360 dataset. [cite_start]Models trained on Omni360 show improved generalization to unseen environments (SphereCraft)[cite: 794].
+                    </p>
+                    <table class="table is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Experiment Type</th>
+                                <th>Training Data</th>
+                                <th>Test Data</th>
+                                <th>AbsRel $\downarrow$</th>
+                                <th>RMSE $\downarrow$</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                [cite_start]<td>Out-of-Domain [cite: 793]</td>
+                                [cite_start]<td>Deep360 [cite: 783]</td>
+                                [cite_start]<td>SphereCraft [cite: 783]</td>
+                                [cite_start]<td>8.2570 [cite: 783]</td>
+                                [cite_start]<td>0.0566 [cite: 783]</td>
+                            </tr>
+                            <tr class="has-background-warning-light">
+                                [cite_start]<td>Out-of-Domain [cite: 793]</td>
+                                [cite_start]<td>**Omni360 (Ours)** [cite: 783]</td>
+                                [cite_start]<td>SphereCraft [cite: 783]</td>
+                                [cite_start]<td><strong>5.4372</strong> [cite: 783]</td>
+                                [cite_start]<td><strong>0.0435</strong> [cite: 783]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 class="title is-4">3. Panoramic Segmentation</h4>
+                    <p>
+                        [cite_start]The introduction of our large-scale Omni360-Scene segmentation data provides substantial performance gains on the WildPASS validation set for pixel-level scene parsing[cite: 799].
+                    </p>
+                    <table class="table is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Training Data</th>
+                                <th>Performance Metric</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                [cite_start]<td rowspan="2">Semantic Segmentation [cite: 787]</td>
+                                [cite_start]<td>WildPASS Baseline [cite: 787]</td>
+                                <td rowspan="2">mIoU $\uparrow$</td>
+                                [cite_start]<td>58.0 [cite: 787]</td>
+                            </tr>
+                            <tr class="has-background-warning-light">
+                                [cite_start]<td>WildPASS + **Omni360-Scene** [cite: 787]</td>
+                                [cite_start]<td><strong>67.4</strong> [cite: 787]</td>
+                            </tr>
+                            <tr>
+                                [cite_start]<td rowspan="2">Entity Segmentation [cite: 787]</td>
+                                [cite_start]<td>WildPASS Baseline [cite: 787]</td>
+                                <td rowspan="2">mAP $\uparrow$</td>
+                                [cite_start]<td>24.6 [cite: 787]</td>
+                            </tr>
+                            <tr class="has-background-warning-light">
+                                [cite_start]<td>WildPASS + **Omni360-Scene** [cite: 787]</td>
+                                [cite_start]<td><strong>38.9</strong> [cite: 787]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
         
-
-<section class="section is-small" id="umi">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile">Future Directions</h2>
-        <div class="content">
-          We outline several future directions, including building larger and more diverse datasets, developing foundational, multimodal, and generation models, and extending to broader downstream applications such as embodied intelligence, autonomous driving, and immersive media.
-          <img src="Future_Direction.png" alt="Future Direction figure" style="width:100%; border-radius:8px; margin-top:1rem;">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-small" id="umi">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile">Acknowledgment</h2>
-        <div class="content">
-          We would like to express our sincere gratitude to Yunning Peng, Haoran Feng, Shi Luo, Ruihua Lu for their valuable contributions that greatly improved the quality of this paper. We also gratefully acknowledge the generous support of Antigravity Team and Insta360 Research Team, whose assistance in various aspects made this work possible.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Citation -->
   <section>
